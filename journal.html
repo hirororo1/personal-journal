@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <button onclick="createNewLog()">📝 Create New Log</button>
+        <button onclick="deleteLogs()">🗑 Delete Logs</button>
+        <button onclick="viewAllLogs()">📖 View All Logs</button>
+    </div>
+
+    <div class="main-content">
+        <h2>New Journal Entry</h2>
+        <textarea id="journalEntry" placeholder="Write your thoughts here..."></textarea>
+        <button onclick="saveLog()">Save Log</button>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
